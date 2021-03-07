@@ -30,7 +30,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => '57f7e50de860b288de9816b4c9a74ed92e4b88e5',
+    'reference' => '442442d0e95db0b2d1889417012ca500f52190aa',
     'name' => 'gva/mygraduatepage.php',
   ),
   'versions' => 
@@ -42,7 +42,16 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => '57f7e50de860b288de9816b4c9a74ed92e4b88e5',
+      'reference' => '442442d0e95db0b2d1889417012ca500f52190aa',
+    ),
+    'tinymce/tinymce' => 
+    array (
+      'pretty_version' => '5.7.0',
+      'version' => '5.7.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '729e1f713c3b6d526daa6cb8f7a3b3ad864c53e3',
     ),
     'twbs/bootstrap' => 
     array (

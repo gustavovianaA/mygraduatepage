@@ -16,6 +16,7 @@
         ]
     },
     "require": {
-        "twbs/bootstrap": "^4.6"
+        "twbs/bootstrap": "^4.6",
+        "tinymce/tinymce": "^5.7"
     }
 }

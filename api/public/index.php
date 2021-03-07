@@ -2,7 +2,7 @@
 header('Content-Type: application/json');
 require_once '../vendor/autoload.php';
 if ($_GET['url']) {
-    $url = explode('/', $_GET['url']);  
+    $url = explode('/', $_GET['url']);
         $service = 'App\Services\\' . ucfirst($url[0]) . 'Service';
         array_shift($url);
         $method = strtolower($_SERVER['REQUEST_METHOD']);
