@@ -1,0 +1,20 @@
+{
+    "name": "gva/mygraduatepage.php",
+    "description": "My Graduate Page",
+    "authors": [
+        {
+            "name": "Gustavo",
+            "email": "gustavow3dev@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4":{
+            "App\\":"App"
+        },
+        "files": [
+            "App/config.php"
+        ]
+    },
+    "require": {
+    }
+}
