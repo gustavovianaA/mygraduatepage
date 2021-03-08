@@ -15,7 +15,7 @@
 </head>
 
 <body class="bg-secondary">
-    <h1>Hello, world!</h1>
+    <h1 class="text-center bg-white py-3">My Graduate Page</h1>
 
     <div class="container">
 
@@ -51,20 +51,20 @@
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
-
     <script src="vendor/tinymce/tinymce/tinymce.js"></script>
 
+    <!-- to do. Need to organize this -->
     <script>
         tinymce.init({
             selector: '.mytextarea',
-            //plugins: 'lists',
-            //toolbar: 'numlist bullist'
+            plugins: 'lists media link',         
+            toolbar: 'numlist bullist media link'
         });
     </script>
 
     <script>
 
-        function cookieStep1() {
+        function storeStep1() {
             tinyMCE.triggerSave();
             let name = $('#content #name').val();
             let about = $('#content #about').val();
@@ -72,20 +72,19 @@
 
             let contentHome = [name, about, contact];
             let contentRasearch = [];
-            document.cookie = "contentHome="+contentHome+"; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
             localStorage.setItem('contentHome', contentHome);
             window.location = 'index.php?step=2';
         }
     </script>
 
     <script>
-        function cookieStep2() {
+        function storeStep2() {
             window.location = 'index.php?step=3';
         }
     </script>
 
     <script>
-        function cookieStep3() {
+        function storeStep3() {
             sendToApi();
         }
     </script>

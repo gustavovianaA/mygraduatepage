@@ -4,6 +4,6 @@
 </div>
 <hr>
 <form metho="POST" action="test.php" id="content">
-    <div class="btn btn-success btn-block" onclick="cookieStep3()">Próximo</div>        
+    <div class="btn btn-success btn-block" onclick="storeStep3()">Próximo</div>        
 </form>
 <div id="finalResult"></div>
